@@ -49,6 +49,6 @@ $("#Submitter").click(function(){
     rslt.innerHTML = prvw[0].innerHTML;
     progress[0].setAttribute("value", "100");
     prvw[0].style.cssText = "display: none;"
-    document.getElementsByClassName("result")[0].style.display = "flex";
+    document.getElementsByClassName("result")[0].classList.replace("hidden", "grid")
   }, 5000);
 });  

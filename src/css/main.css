@@ -52,7 +52,7 @@ progress {
   height: 5px;
 }
 
-.result {
+.result.hidden {
   display: none;
 }
 
