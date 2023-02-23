@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="fa">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="src/css/main.css">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!-- Turndown | HTML -> Markdown -->
+  <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+
+  <!-- Custom JS -->
+  <script src="src/js/main.js"></script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="src/img/FOSSFA.png" type="image/x-icon">
+
+  <!-- Page title -->
+  <title>FOSSFA [Telegraph converter]</title>
 </head>
-<body>
-  
+<body class="container">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://FOSSFA.ir" class="secondary"><img src="https://icongr.am/simple/opensourceinitiative.svg?size=24&color=808080&colored=false" alt="oprnsource logo"></a></li>
+      </ul>
+      <ul>
+        <li><strong>مبدل پست و مقاله فوسفا</strong></li>
+      </ul>
+      <ul>
+        <li><a href="https://t.me/FOSSFA" class="secondary"><img src="https://icongr.am/simple/telegram.svg?size=24&color=808080&colored=false" alt="telegram logo"></a></li>
+      </ul>
+    </nav>
+    <progress value="100" max="100"></progress>
+  </header>
+  <main>
+    <form action="">
+      <input type="text" placeholder="لینک تلگراف" name="" id="">
+      <button type="submit">تایید</button>
+    </form>
+  </main>
 </body>
 </html>
