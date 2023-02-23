@@ -37,7 +37,41 @@
   --spacing: .5rem;
 }
 
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--background-color);
+  z-index: 1;
+}
+
 /* Customize component */
 progress {
   height: 5px;
+}
+
+.result {
+  display: none;
+}
+
+.result .result-box {
+  height: 65vmin;
+  margin-left: 1rem;
+}
+
+/* Preview Scroll */
+.prvw {
+  animation: scroll 5s ease-in-out;
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    margin-top: .25rem;
+  }
+  to {
+    margin-top: -200vmin;
+  }
 }

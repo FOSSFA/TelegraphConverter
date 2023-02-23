@@ -16,13 +16,10 @@
 
   <!-- Turndown | HTML -> Markdown -->
   <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
-
-  <!-- Custom JS -->
-  <script src="src/js/main.js"></script>
-
+  
   <!-- Favicon -->
   <link rel="shortcut icon" href="src/img/FOSSFA.png" type="image/x-icon">
-
+  
   <!-- Page title -->
   <title>FOSSFA [Telegraph converter]</title>
 </head>
@@ -42,10 +39,18 @@
     <progress value="100" max="100"></progress>
   </header>
   <main>
-    <form action="">
-      <input type="text" placeholder="لینک تلگراف" name="" id="">
-      <button type="submit">تایید</button>
+    <form id="Linkform">
+      <input type="text" placeholder="لینک تلگراف" id="Telegraphlink">
+      <button type="button" id="Submitter">تایید</button>
     </form>
+    <div class="result">
+      <textarea name="1" id="rslt" class="result-box" readonly></textarea>
+      <textarea name="0" id="rsltMD" class="result-box" readonly></textarea>
+    </div>
+    <div class="prvw"></div>
   </main>
+  
+  <!-- Custom JS -->
+  <script src="src/js/main.js"></script>
 </body>
 </html>
