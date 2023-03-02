@@ -35,7 +35,7 @@ function nodeToDom(node) {
 }
 
 $("#Submitter").click(function(){ 
-  $.getJSON('https://api.telegra.ph/getPage/' + Telegraphlink.value + '?return_content=true', function (data) {
+  $.getJSON(Telegraphlink.value.replace('https://telegra.ph/', 'https://api.telegra.ph/getPage/') + '?return_content=true', function (data) {
     data["result"].content.forEach(cont => {
       prvw[0].innerHTML = prvw[0].innerHTML + nodeToDom(cont).outerHTML;
     });

@@ -37,11 +37,6 @@
   --spacing: .5rem;
 }
 
-body {
-  height: 100vh;
-  overflow: hidden;
-}
-
 header {
   background-color: var(--background-color);
   z-index: 1;
